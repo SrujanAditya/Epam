@@ -21,16 +21,19 @@ public class App
 		//}
 	}
 	public void bubbleSort(){
-		int temp=0;
 		for(int i=0;i<sizeOfArray;i++){
 			for(int j=i+1;j<sizeOfArray;j++){
 				if(inputNumbers[i]>inputNumbers[j]){
-					temp=inputNumbers[i];
-					inputNumbers[i]=inputNumbers[j];
-					inputNumbers[j]=temp;
+					swapNumbers(i,j);
 				}
 			}
 		}
+	}
+	public void swapNumbers(int i,int j){
+		int temp=0;
+		temp=inputNumbers[i];
+		inputNumbers[i]=inputNumbers[j];
+		inputNumbers[j]=temp
 	}
 	public void display(){
 		for(int i=0;i<sizeOfArray;i++)
