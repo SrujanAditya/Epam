@@ -10,14 +10,15 @@ public class App
 	int sizeOfArray;
 	int[] inputNumbers;
 	App(){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the no. of array Numbers to be sorted:");
-		sizeOfArray=sc.nextInt();
-		inputNumbers=new int[sizeOfArray];
-		System.out.println("Enter the numbers:");
-		for(int i=0;i<sizeOfArray;i++)
-			inputNumbers[i]=sc.nextInt();
-		
+		//try(Scanner sc=new Scanner(System.in)){
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the no. of array Numbers to be sorted:");
+			sizeOfArray=sc.nextInt();
+			inputNumbers=new int[sizeOfArray];
+			System.out.println("Enter the numbers:");
+			for(int i=0;i<sizeOfArray;i++)
+				inputNumbers[i]=sc.nextInt();
+		//}
 	}
 	public void bubbleSort(){
 		int temp=0;
