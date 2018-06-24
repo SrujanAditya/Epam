@@ -1,1 +1,3 @@
-com\epam\BSort\App.class
+com\epam\BSort\BubbleSort.class
+com\epam\MSort\MergeSort.class
+com\epam\QSort\QuickSort.class

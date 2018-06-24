@@ -1,4 +1,4 @@
-package com.epam.BSort;
+package com.epam.Sort;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

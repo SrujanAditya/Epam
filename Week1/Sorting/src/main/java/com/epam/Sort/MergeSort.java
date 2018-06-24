@@ -8,6 +8,10 @@ public class MergeSort
 {
 	int sizeOfArray;
 	int[] inputNumbers;
+	/*
+	Method Name: getInput
+	Used to get input from the user
+	*/
 	public void getInput(){
 		//try(Scanner sc=new Scanner(System.in)){
 			Scanner sc=new Scanner(System.in);
@@ -19,6 +23,10 @@ public class MergeSort
 				inputNumbers[i]=sc.nextInt();
 		//}
 	}
+	/*
+	Method Name: mergeSort
+	Used to sort the array elements using merge sort
+	*/
 	public void mergeSort(int start,int end){
 		if(start<end){
 			int middle=(start+end)/2;
@@ -28,6 +36,10 @@ public class MergeSort
 			merge(start,middle,end);
 		}
 	}
+	/*
+	Method Name: merge
+	Used to merge two parts of an array in a sorting order
+	*/
 	public void merge(int start,int middle,int end){
 		int i,j;
 		int l1 = middle-start + 1;
@@ -51,14 +63,21 @@ public class MergeSort
 				inputNumbers[k]=right[j++];
 		}
 	}
+	/*
+	Method Name: display
+	Used to display the array elements
+	*/
 	public void display(){
 		for(int i=0;i<sizeOfArray;i++)
 			System.out.print(inputNumbers[i]+" ");
 	}
+	/*
+	Main Method
+	*/
     public static void main( String[] args )
     {
         MergeSort obj=new MergeSort ();
-	obj.getInput();
+		obj.getInput();
 		obj.mergeSort(0,obj.sizeOfArray-1);
 		System.out.println("Sorted Order:");
 		obj.display();
