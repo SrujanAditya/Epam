@@ -4,11 +4,11 @@ import java.util.*;
  * Merge Sort!
  *
  */
-public class App 
+public class MergeSort 
 {
 	int sizeOfArray;
 	int[] inputNumbers;
-	App(){
+	public void getInput(){
 		//try(Scanner sc=new Scanner(System.in)){
 			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter the no. of array Numbers to be sorted:");
@@ -57,7 +57,8 @@ public class App
 	}
     public static void main( String[] args )
     {
-        App obj=new App();
+        MergeSort obj=new MergeSort ();
+	obj.getInput();
 		obj.mergeSort(0,obj.sizeOfArray-1);
 		System.out.println("Sorted Order:");
 		obj.display();

@@ -5,11 +5,11 @@ import java.util.*;
  * Bubble Sort
  *
  */
-public class App 
+public class BubbleSort
 {
 	int sizeOfArray;
 	int[] inputNumbers;
-	App(){
+	public void getInput(){
 		//try(Scanner sc=new Scanner(System.in)){
 			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter the no. of array Numbers to be sorted:");
@@ -41,7 +41,8 @@ public class App
 	}
     public static void main( String[] args )
     {
-		App obj=new App();
+		BubbleSort obj=new BubbleSort();
+		obj.getInput();
 		obj.bubbleSort();
 		System.out.println("Sorted Order:");
 		obj.display();
