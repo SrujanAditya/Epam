@@ -1,4 +1,4 @@
-package com.epam.MSort;
+package com.epam.Sort;
 import java.util.*;
 /**
  * Merge Sort!

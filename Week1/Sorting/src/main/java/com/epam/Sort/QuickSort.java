@@ -1,4 +1,4 @@
-package com.epam.QSort;
+package com.epam.Sort;
 import java.util.*;
 /**
  * Quick Sort!
