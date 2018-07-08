@@ -15,7 +15,7 @@ import java.util.Comparator;
 /**
  *This class is used to sort the student list based on student firstname
  */
-private class SortByFirstName implements Comparator<Student>{	//Comparator to sort by First Name
+public class SortByFirstName implements Comparator<Student>{	//Comparator to sort by First Name
 	public int compare(Student s1, Student s2) {
 		return s1.getFirstName().compareTo(s2.getFirstName());
 	}
@@ -23,7 +23,7 @@ private class SortByFirstName implements Comparator<Student>{	//Comparator to so
 /**
  *This class is used to sort the student list based on student lastname
  */	
-private class SortByLastName implements Comparator<Student>{	//Comparator to sort by Last Name
+public class SortByLastName implements Comparator<Student>{	//Comparator to sort by Last Name
 	public int compare(Student s1, Student s2) {
 		return s1.getLastName().compareTo(s2.getLastName());
 	}
@@ -31,7 +31,7 @@ private class SortByLastName implements Comparator<Student>{	//Comparator to sor
 /**
  *This class is used to sort the student list based on student branch
  */
-private class SortByBranch implements Comparator<Student>{	//Comparator to sort by Branch
+public class SortByBranch implements Comparator<Student>{	//Comparator to sort by Branch
 	public int compare(Student s1, Student s2) {
 		return s1.getBranch().compareTo(s2.getBranch());
 	}
@@ -39,7 +39,7 @@ private class SortByBranch implements Comparator<Student>{	//Comparator to sort 
 /**
  *This class is used to sort the student list based on student id
  */
-private class SortById implements Comparator<Student>{	//Comparator to sort by Id
+public class SortById implements Comparator<Student>{	//Comparator to sort by Id
 	public int compare(Student s1, Student s2) {
 		return s1.getId() - s2.getId();
 	}
@@ -47,7 +47,7 @@ private class SortById implements Comparator<Student>{	//Comparator to sort by I
 /**
  *This class is used to sort the student list based on student year
  */
-private class SortByYear implements Comparator<Student>{	//Comparator to sort by Year
+public class SortByYear implements Comparator<Student>{	//Comparator to sort by Year
 	public int compare(Student s1, Student s2) {
 		return s1.getYear() - s2.getYear();
 	}

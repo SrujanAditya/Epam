@@ -31,7 +31,7 @@ public class StudentMain
 				StudentList.add(new Student(line.split(",")));
 			}
 			catch(Exception e) {
-				System.err.println("Invalid file);
+				System.err.println("Invalid file");
 			}
 		}
 	}
