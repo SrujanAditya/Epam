@@ -42,14 +42,14 @@ public class StudentMain
     	System.out.println("ID | First Name | Last Name | Branch | Year");
     	for(Student studentobject:StudentList)
 		 {
-			  System.out.println(studentobject.getId()+","+studentobject.getFirstName()+","+studentobject.getLastName()+","+studentobject.getBranch()+","+studentobject.getYear());
+			  System.out.println(studentobject.getId()+","+studentobject.getFirstName()+","+studentobject.getLastName()+","+studentobject.getDepartmentName()+","+studentobject.getYear());
 		 }
     }
     /**
 	 * This Method is used to print the student object.
 	 */
     public void printStudentList(Student studentobject){
-    	System.out.println(studentobject.getId()+","+studentobject.getFirstName()+","+studentobject.getLastName()+","+studentobject.getBranch()+","+studentobject.getYear());
+    	System.out.println(studentobject.getId()+","+studentobject.getFirstName()+","+studentobject.getLastName()+","+studentobject.getDepartmentName()+","+studentobject.getYear());
 	}
     /**
 	 * This Method is used to search the student list based on the search string
@@ -90,27 +90,27 @@ public class StudentMain
 					int sortChoice=Integer.parseInt(sc.nextLine());
 					switch(choice){
 						case 1:
-							Collections.sort(StudentList, new SortById());
+							Collections.sort(classObj.StudentList, new SortById());
 							System.out.println("Student List sorted by student ID");
 							classObj.displayStudentList();
 							break;
 						case 2:
-							Collections.sort(StudentList, new SortByFirstName());
+							Collections.sort(classObj.StudentList, new SortByFirstName());
 							System.out.println("Student List sorted by student First Name");
 							classObj.displayStudentList();
 							break;
 						case 3:
-							Collections.sort(StudentList, new SortByLastName());
+							Collections.sort(classObj.StudentList, new SortByLastName());
 							System.out.println("Student List sorted by student Last Name");
 							classObj.displayStudentList();
 							break;
 						case 4:
-							Collections.sort(StudentList, new SortByBranch());
+							Collections.sort(classObj.StudentList, new SortByBranch());
 							System.out.println("Student List sorted by student Branch");
 							classObj.displayStudentList();
 							break;
 						case 5:
-							Collections.sort(StudentList, new SortByYear());
+							Collections.sort(classObj.StudentList, new SortByYear());
 							System.out.println("Student List sorted by student year");
 							classObj.displayStudentList();
 							break;
