@@ -33,7 +33,7 @@ public class SortByLastName implements Comparator<Student>{	//Comparator to sort
  */
 public class SortByBranch implements Comparator<Student>{	//Comparator to sort by Branch
 	public int compare(Student s1, Student s2) {
-		return s1.getBranch().compareTo(s2.getBranch());
+		return s1.getDepartmentName().compareTo(s2.getDepartmentName());
 	}
 }
 /**
